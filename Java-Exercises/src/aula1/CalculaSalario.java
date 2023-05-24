@@ -12,12 +12,11 @@ public class CalculaSalario {
 		Scanner sc = new Scanner(System.in);
 		
 		// variables
-		float income;
-		float allowance;
-		float newIncome;
+		float income, allowance, newIncome;
 		
 		System.out.println("Digite o salário: ");
 		income = sc.nextFloat();
+		
 		System.out.println("Digite o Abono: ");
 		allowance = sc.nextFloat();
 		
