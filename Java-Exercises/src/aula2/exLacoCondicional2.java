@@ -19,7 +19,7 @@ public class exLacoCondicional2 {
 			System.out.print("Digite um número: ");
 			int input = sc.nextInt();
 
-			switch (verifyCondicion(input)) {
+			switch (verifyCondiction(input)) {
 			case "par e positivo":
 				System.out.println("O Número " + input + " é par e positivo!");
 				break;
@@ -42,7 +42,7 @@ public class exLacoCondicional2 {
 	}
 
 	// function that verifies condition of input
-	public static String verifyCondicion(int input) {
+	public static String verifyCondiction(int input) {
 		if (input % 2 == 0 && input > 0) {
 			return "par e positivo";
 		} else if (input % 2 == 0 && input < 0) {
