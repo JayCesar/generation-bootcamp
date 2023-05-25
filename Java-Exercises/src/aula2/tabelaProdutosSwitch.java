@@ -3,7 +3,7 @@ package aula2;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class tabelProdutosSwitch {
+public class tabelaProdutosSwitch {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
