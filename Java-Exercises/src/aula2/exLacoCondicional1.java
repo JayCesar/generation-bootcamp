@@ -12,14 +12,17 @@ public class exLacoCondicional1 {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
+		// variables
 		String letters[] = {"A", "B", "C"};
 		int numbers[] = new int[3];
 		
+		// input
 		for (int i = 0; i < numbers.length; i++) {
 			System.out.print("Digite o número " + letters[i] + ": ");
 			numbers[i] = sc.nextInt();
 		}
 		
+		// check
 		if (numbers[0] + numbers[1] > numbers[2]) {
 			System.out.println();
 			System.out.println(numbers[1] + " + " + numbers[0] + " = " + (numbers[0] + numbers[1]) + " > " +  numbers[2] + "\n");
