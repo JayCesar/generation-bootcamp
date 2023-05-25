@@ -67,41 +67,6 @@ public class ProgramDonatingBlood {
 		        iterator.remove();
 		    }
 		}
-		
-		/*for (Donor d : donorsList) {
-			if(d.getAge() >= 60 && d.getAge() <= 69) {
-				if (d.verifyFirstTime(d.getDonorStatus())) {
-					System.out.println(d.getName() + " não está apto para doar sangue!");
-					donorsList.remove(d);
-				}else {
-					System.out.println(d.getName() + " está apto(a) para doar sangue!");
-				}
-			}
-			else if(d.getAge() >= 18 && d.getAge() < 60) {
-				System.out.println(d.getName() + " está apto(a) para doar sangue!");
-			}
-			else {
-				System.out.println(d.getName() + " não está apto para doar sangue!");
-				donorsList.remove(d);
-			}
-			
-		}*/
-		
-
-
-		/*if(donor.getAge() >= 60 && donor.getAge() <= 69) {
-			if (donor.verifyFirstTime(donor.getDonorStatus())) {
-				System.out.println(donor.getName() + " não está apto para doar sangue!");
-			}else {
-				System.out.println(donor.getName() + " está apto(a) para doar sangue!");
-			}
-		}
-		else if(donor.getAge() >= 18 && donor.getAge() < 60) {
-			System.out.println(donor.getName() + " está apto(a) para doar sangue!");
-		}
-		else {
-			System.out.println(donor.getName() + " não está apto para doar sangue!");
-		}*/
 	
 		
 		sc.close();
