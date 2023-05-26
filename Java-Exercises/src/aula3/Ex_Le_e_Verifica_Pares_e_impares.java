@@ -3,7 +3,7 @@ package aula3;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class ex_Le_e_Verifica_Pares_e_impares {
+public class Ex_Le_e_Verifica_Pares_e_impares {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
