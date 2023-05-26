@@ -2,6 +2,8 @@ package aula3.entities;
 
 import java.util.List;
 
+//link to exercise: https://docs.google.com/document/d/1MtGrmQGe84qvJrvHT4Avu1K_ij209xAc/edit?usp=sharing&ouid=112690016069965069438&rtpof=true&sd=true
+
 public class Colaborador {
 	private Integer age;
 	private Integer sex;

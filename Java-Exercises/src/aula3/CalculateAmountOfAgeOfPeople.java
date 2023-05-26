@@ -3,8 +3,9 @@ package aula3;
 import java.util.Locale;
 import java.util.Scanner;
 
+// link to exercise: https://docs.google.com/document/d/1MtGrmQGe84qvJrvHT4Avu1K_ij209xAc/edit?usp=sharing&ouid=112690016069965069438&rtpof=true&sd=true
 public class CalculateAmountOfAgeOfPeople {
-
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Locale.setDefault(Locale.US);

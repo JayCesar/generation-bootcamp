@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 import aula3.entities.Colaborador;
 
+//link to exercise: https://docs.google.com/document/d/1MtGrmQGe84qvJrvHT4Avu1K_ij209xAc/edit?usp=sharing&ouid=112690016069965069438&rtpof=true&sd=true
 public class ProgramColaboradores {
 
 	public static void main(String[] args) {

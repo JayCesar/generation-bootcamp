@@ -3,6 +3,8 @@ package aula3;
 import java.util.Locale;
 import java.util.Scanner;
 
+// link to exercise: https://docs.google.com/document/d/1MtGrmQGe84qvJrvHT4Avu1K_ij209xAc/edit?usp=sharing&ouid=112690016069965069438&rtpof=true&sd=true
+
 public class ExIntervaloEMultiploesDe3e5 {
 
 	public static void main(String[] args) {
