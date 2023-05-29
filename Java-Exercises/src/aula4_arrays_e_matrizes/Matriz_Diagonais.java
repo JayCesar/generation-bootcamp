@@ -2,7 +2,7 @@ package aula4_arrays_e_matrizes;
 
 import java.util.Scanner;
 
-public class matriz_Diagonais {
+public class Matriz_Diagonais {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
