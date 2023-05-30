@@ -12,7 +12,6 @@ public class NumbersSet {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		Integer inputNumber = null, randomNumber = null;
-		Boolean verifyEqual = false;
 		
 		Set<Integer> numbersList = new HashSet<Integer>();
 
@@ -30,19 +29,13 @@ public class NumbersSet {
 		for (int i = 0; i < listAmount; i++) {
 			System.out.print("Digite o número " + (i+1) + "° número: ");
 			inputNumber = sc.nextInt();
-			if (inputNumber == randomNumber) {
-				verifyEqual = true;
-				while(verifyEqual) {
-					System.out.println("\nNúmero " + inputNumber + " digitado anteriormente.");
-					System.out.print("Por favor, digite outro número: ");
-					inputNumber = sc.nextInt();
-					if (inputNumber != randomNumber) verifyEqual = false;
-				}
-			}else {
-				numbersList.add(inputNumber);
-				randomNumber = inputNumber;
-			}
-			
+			while (inputNumber == randomNumber) {
+				System.out.println("\nNúmero " + inputNumber + " digitado anteriormente.");
+				System.out.print("Por favor, digite outro número: ");
+				inputNumber = sc.nextInt();
+			} 
+			numbersList.add(inputNumber);
+			randomNumber = inputNumber;
 		}
 		
 		// Imprimindo itens
