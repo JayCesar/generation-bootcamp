@@ -2,17 +2,15 @@ package aula5_collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Colors {
 	// Link to exercise: https://docs.google.com/document/d/1u8PbJTYGHgWoJIkHF-sJJcD25RWvmVAX/edit
 	public static void main(String[] args) {
-		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
 		ArrayList<String> colorsList = new ArrayList<>();
-		ArrayList<String> otherList = new ArrayList<>();
+		ArrayList<String> otherList = new ArrayList<>(); // It is just a test
 		
 		System.out.print("Quantas corers serão digitadas? ");
 		int colorsAmount = sc.nextInt();
@@ -21,7 +19,7 @@ public class Colors {
 		System.out.println();
 		
 		for(int i = 0; i < colorsAmount; i++) {
-			System.out.print("Digite um color: ");
+			System.out.print("Digite uma cor: ");
 			colorsList.add(sc.nextLine());
 			System.out.println();
 		}
@@ -48,10 +46,4 @@ public class Colors {
 
 }
 
-/*
-Azul
-Verde
-Amarelo
-Branco
-Laranja
-*/
+
