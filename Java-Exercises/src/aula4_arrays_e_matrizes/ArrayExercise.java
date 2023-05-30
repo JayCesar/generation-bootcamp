@@ -27,7 +27,7 @@ public class ArrayExercise {
 		for (int number : arrayNumbers) 
 			if (number % 2 == 0) System.out.print(number + " ");
 		
-		media = (double) sum / 10;
+		media = (double) sum / arrayNumbers.length;
 		
 		System.out.print("\n\nSoma: " + sum);
 		System.out.print("\n\nMédia: " + String.format("%.2f", media));
