@@ -11,7 +11,86 @@ public class camada_pilha {
 		
 		Queue<String> fila = new LinkedList<>();
 		
+		printMenu();
 		
+		System.out.print("\nEntre com a opção desejada: ");
+		int choiceList = sc.nextInt();
+		
+		while(verifyOption(choiceList)) {
+			switch(choiceList) {
+				case 1:
+					sc.nextLine();
+					System.out.print("\nDigite o nome: ");
+					String nameInput = sc.nextLine();
+					fila.add(nameInput);
+					System.out.println("\nFila:");
+					System.out.println("\n" + nameInput);
+					System.out.println("\nCliente adicionado!");
+					System.out.print("\nDeseja continuar o programa (s/n)? ");
+					choiceList = verifyInput(sc.next().toLowerCase().charAt(0));
+					/*char keep = sc.next().toLowerCase().charAt(0);
+					if (keep == 'n') {
+						choiceList = 0;
+						System.out.println("\nPrograma Finalizado!");
+					}
+					else {
+						System.out.print("\nEntre com a opção desejada: ");
+						int localOption = sc.nextInt();
+						verifyOption(localOption);
+						choiceList = localOption;
+						sc.nextLine();
+					}*/
+					break;
+				case 2: 
+					System.out.println("\nLista de Clientes na Fila:");
+					fila.forEach(name -> System.out.println(name));
+					System.out.print("\nDeseja continuar o programa (s/n)? ");
+					char keep1 = sc.next().toLowerCase().charAt(0);
+					if (keep1 == 'n') {
+						choiceList = 0;
+						System.out.println("\nPrograma Finalizado!");
+					}
+					else {
+						System.out.print("\nEntre com a opção desejada: ");
+						int localOption = sc.nextInt();
+						verifyOption(localOption);
+						choiceList = localOption;
+						sc.nextLine();
+					}
+					break;
+				case 3:
+					if (fila.poll() != null) {
+						System.out.println("\nFila:\n");
+						fila.forEach(n -> System.out.println(n));
+						System.out.println("\nO Cliente foi Chamado!");
+					}else {
+						System.out.println("\nA Fila está vazia!");
+					}
+					System.out.print("\nDeseja continuar o programa (s/n)? ");
+					char keep2 = sc.next().toLowerCase().charAt(0);
+					if (keep2 == 'n') {
+						choiceList = 0;
+						System.out.println("\nPrograma Finalizado!");
+					}
+					else {
+						System.out.print("\nEntre com a opção desejada: ");
+						int localOption = sc.nextInt();
+						verifyOption(localOption);
+						choiceList = localOption;
+						sc.nextLine();
+					}
+					break;
+				default:
+					System.out.println("Test");	
+			}
+		
+		}
+	
+		sc.close();
+	}
+	
+	
+	public static void printMenu() {
 		for (int i = 0; i <= 50; i++) System.out.print("*");
 		System.out.println("\n");
 		System.out.println("\t 1 - Adicionar Cliente na Fila");
@@ -20,53 +99,44 @@ public class camada_pilha {
 		System.out.println("\t 0 - Sair");
 		System.out.println("");
 		for (int i = 0; i <= 50; i++) System.out.print("*");
-		
-		System.out.print("\nEntre com a opção desejada: ");
-		int inputOption = sc.nextInt();
-		sc.nextLine();
-		fila.add("Julio");
-		fila.add("Julio");
-		fila.add("Julio");
-		switch (inputOption){
-			case 1:
-				System.out.print("\nDigite o nome: ");
-				String name = sc.nextLine();
-				fila.add(name);
-				System.out.println("\nFila:");
-				System.out.println("\n" + name);
-				System.out.println("\nCliente adicionado!");
-				break;
-			case 2:
-				System.out.println("\nLista de Clientes na Fila:");
-				fila.forEach(n -> System.out.println(n));
-				break;
-			case 3:
-				if (fila.poll() != null) {
-					System.out.println("\nFila:\n");
-					fila.forEach(n -> System.out.println(n));
-					System.out.println("\nO Cliente foi Chamado!");
-				}else {
-					System.out.println("\nA Fila está vazia!");
-				}
-				break;
-			case 0:
-				System.out.println("\nPrograma Finalizado!");
-				break;
-			default: verifyOption(inputOption);
-		}
-
 	}
 	
-	public static int verifyOption(int inputOption) {
+	public static boolean verifyOption(int inputOption) {
 		int option = inputOption;
 		Scanner sc = new Scanner(System.in);
-		while(!(option <= 3) && option > 0) {
+		while (!(option <= 3) || !(option > -1)) {
 			System.out.println("\nOpção inválida!");
 			System.out.print("Digite novamente: ");
 			option = sc.nextInt();
 		}
-		sc.close();
-		return option;
+		return (option != 0) ? true : false;
 	}
+	
+	public static int verifyInput(char response) {
+		char input = response;
+		Scanner sc = new Scanner(System.in);
+		if (input == 'n') {
+			System.out.println("\nPrograma Finalizado!");
+			return 0;
+		}else {
+			System.out.print("\nEntre com a opção desejada: ");
+			int choiceList = sc.nextInt();
+			verifyOption(choiceList);
+			return choiceList;
+		}
+	}
+	
+	/*char keep = sc.next().toLowerCase().charAt(0);
+	if (keep == 'n') {
+		choiceList = 0;
+		System.out.println("\nPrograma Finalizado!");
+	}
+	else {
+		System.out.print("\nEntre com a opção desejada: ");
+		int localOption = sc.nextInt();
+		verifyOption(localOption);
+		choiceList = localOption;
+		sc.nextLine();
+	}*/
 
 }
