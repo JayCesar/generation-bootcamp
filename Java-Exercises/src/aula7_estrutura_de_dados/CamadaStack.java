@@ -1,15 +1,13 @@
 package aula7_estrutura_de_dados;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Scanner;
+import java.util.Stack;
 
-public class camada_queue {
-
+public class CamadaStack {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		Queue<String> fila = new LinkedList<>();
+		Stack<String> books = new Stack<String>();
 
 		printMenu();
 
@@ -19,46 +17,40 @@ public class camada_queue {
 		while (verifyOption(choiceList)) {
 			switch (choiceList) {
 			case 1:
-				addClient(fila);
+				addBook(books);
 				System.out.print("\nDeseja continuar o programa (s/n)? ");
 				choiceList = verifyInput(sc.next().toLowerCase().charAt(0));
 				break;
 			case 2:
-				listClients(fila);
+				listBooks(books);
 				System.out.print("\nDeseja continuar o programa (s/n)? ");
 				choiceList = verifyInput(sc.next().toLowerCase().charAt(0));
 				break;
 			case 3:
-				removeClients(fila);
+				removeBook(books);
 				System.out.print("\nDeseja continuar o programa (s/n)? ");
 				choiceList = verifyInput(sc.next().toLowerCase().charAt(0));
 				break;
-			case 0:
-				System.out.println("\nPrograma Finalizado!");
-				break;
-			default:
-				System.out.println("Test");
 			}
 		}
 		System.out.println("\nPrograma Finalizado!");
-
 		sc.close();
 	}
 
+	// Imprime o menu
 	public static void printMenu() {
 		for (int i = 0; i <= 50; i++)
-		System.out.print("*");
+			System.out.print("*");
 		System.out.println("\n");
-		System.out.println("\t 1 - Adicionar Cliente na Fila");
-		System.out.println("\t 2 - Listar todos os Clientes");
-		System.out.println("\t 3 - Retirar Cliente da Fila");
+		System.out.println("\t 1 - Adicionar Livos na Pilha");
+		System.out.println("\t 2 - Listar todos os Livros");
+		System.out.println("\t 3 - Retirar livro da Pilha");
 		System.out.println("\t 0 - Sair");
 		System.out.println("");
 		for (int i = 0; i <= 50; i++)
-		System.out.print("*");
+			System.out.print("*");
 	}
 
-	// Verifica a opção escolhida
 	public static boolean verifyOption(int inputOption) {
 		int option = inputOption;
 		Scanner sc = new Scanner(System.in);
@@ -73,10 +65,15 @@ public class camada_queue {
 	public static int verifyInput(char response) {
 		char input = response;
 		Scanner sc = new Scanner(System.in);
+		while (input != 'n' && input != 's') {
+			System.out.print("\nOpção inválida! \nDigite novamente: ");
+			input = sc.next().toLowerCase().charAt(0);
+		}
 		if (input == 'n') {
 			System.out.println("\nPrograma Finalizado!");
 			return 0;
 		} else {
+			printMenu();
 			System.out.print("\nEntre com a opção desejada: ");
 			int choiceList = sc.nextInt();
 			verifyOption(choiceList);
@@ -84,36 +81,38 @@ public class camada_queue {
 		}
 	}
 
-	// Adicionar cliente na fila
-	public static void addClient(Queue<String> fila) {
+	// Adiciona um livro
+	public static void addBook(Stack<String> books) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("\nDigite o nome: ");
-		String nameInput = sc.nextLine();
-		fila.add(nameInput);
-		System.out.println("\nFila:");
-		System.out.println("\n" + nameInput);
-		System.out.println("\nCliente adicionado!");
+		String bookName = sc.nextLine();
+		books.push(bookName);
+		System.out.println("\nPilha:");
+		System.out.println("\n" + bookName);
+		System.out.println("\nLivro adicionado!");
 	}
 
-	// Lista nomes:
-	public static void listClients(Queue<String> fila) {
-		if (fila.size() == 0) {
-			System.out.println("\nA lista está vazia!");
+	// Lista os livros:
+	public static void listBooks(Stack<String> books) {
+		if (books.isEmpty()) {
+			System.out.println("\nA Pilha está vazia!");
 		} else {
-			System.out.println("\nLista de Clientes na Fila:");
+			System.out.println("\nA Pilha está vazia!");
 			System.out.println();
-			fila.forEach(name -> System.out.println(name));
+			books.forEach(book -> System.out.println(book));
 		}
 	}
 
 	// Remove cliente
-	public static void removeClients(Queue<String> fila) {
-		if (fila.size() > 0) {
-			String calledClient = fila.peek();
+	public static void removeBook(Stack<String> books) {
+		if (!books.isEmpty()) {
+			String removedBook = books.pop();
 			System.out.println("\nFila:\n");
-			fila.poll();
-			fila.forEach(n -> System.out.println(n));
-			System.out.println("\nO Cliente " + calledClient + " foi Chamado!");
+			books.forEach(book -> System.out.println(book));
+			System.out.println("\nO livro " + removedBook + " foi retirado da pilha!");
+		} else {
+			System.out.println("\nA Pilha está vazia!");
+			
 		}
 	}
 
