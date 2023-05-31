@@ -22,12 +22,9 @@ public class ArrayListExercise {
 		System.out.println("Digite o número que você deseja encontrar: ");
 		int numberTyped = sc.nextInt();
 		
-		
 		if (list.contains(numberTyped)) {
 			list.forEach(number -> {
-				if (number == numberTyped) {
-					 System.out.println("O número " + numberTyped + " está localizado na posição " + list.indexOf(number));
-				}
+				if (number == numberTyped) System.out.println("O número " + numberTyped + " está localizado na posição: " + list.indexOf(number));
 			});
 		}else {
 			System.out.println("O número " + numberTyped + " não foi encontrado!");
