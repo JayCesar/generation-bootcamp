@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class camada_pilha {
+public class camada_queue {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -39,7 +39,6 @@ public class camada_pilha {
 			default:
 				System.out.println("Test");
 			}
-
 		}
 		System.out.println("\nPrograma Finalizado!");
 
@@ -48,7 +47,7 @@ public class camada_pilha {
 
 	public static void printMenu() {
 		for (int i = 0; i <= 50; i++)
-			System.out.print("*");
+		System.out.print("*");
 		System.out.println("\n");
 		System.out.println("\t 1 - Adicionar Cliente na Fila");
 		System.out.println("\t 2 - Listar todos os Clientes");
@@ -56,7 +55,7 @@ public class camada_pilha {
 		System.out.println("\t 0 - Sair");
 		System.out.println("");
 		for (int i = 0; i <= 50; i++)
-			System.out.print("*");
+		System.out.print("*");
 	}
 
 	// Verifica a opção escolhida
