@@ -18,7 +18,6 @@ public class TestaCliente {
 		System.out.println(c1.visualizar());
 		System.out.println();
 		System.out.println(c2.visualizar());
-		// System.out.println(c2.visualizar());
 	}
 
 }
