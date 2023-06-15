@@ -1,0 +1,71 @@
+package entities;
+
+import java.time.LocalDate;
+
+public class Cliente {
+	private String name;
+	private String email;
+	private LocalDate birthDate;
+	private Integer id;
+	private String city;
+	
+	public Cliente() {}
+
+	public Cliente(String name, String email, LocalDate birthDate, Integer id, String city) {
+		this.name = name;
+		this.id = id;
+		this.email = email;
+		this.birthDate = birthDate;
+		
+		this.city = city;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public LocalDate getBirthDate() {
+		return birthDate;
+	}
+
+	public void setBirthDate(LocalDate birthDate) {
+		this.birthDate = birthDate;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+	
+	public static String visualizar() {
+		return getName();
+	}
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,95 @@
+package aula7_estrutura_de_dados;
+
+import java.util.Queue;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class CamadaStack {
+	public static void main (String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		Stack<String> books = new Stack<String>();
+		
+		printMenu();
+		
+		System.out.print("\nEntre com a opção desejada: ");
+		int choiceList = sc.nextInt();
+		
+		while(verifyOption(choiceList)) {
+			switch(choiceList) {
+			case 1:
+				addBook(books);
+				System.out.print("\nDeseja continuar o programa (s/n)? ");
+				choiceList = verifyInput(sc.next().toLowerCase().charAt(0));
+				break;
+			case 2:
+				
+			}
+		}
+		System.out.println("\nPrograma Finalizado!");
+	}
+	
+	// Imprime o menu
+	public static void printMenu() {
+		for (int i = 0; i <= 50; i++)
+		System.out.print("*");
+		System.out.println("\n");
+		System.out.println("\t 1 - Adicionar Livos na Pilha");
+		System.out.println("\t 2 - Listar todos os Livros");
+		System.out.println("\t 3 - Retirar livro da Pilha");
+		System.out.println("\t 0 - Sair");
+		System.out.println("");
+		for (int i = 0; i <= 50; i++)
+		System.out.print("*");
+	}
+	
+	public static boolean verifyOption(int inputOption) {
+		int option = inputOption;
+		Scanner sc = new Scanner(System.in);
+		while (!(option <= 3) || !(option > -1)) {
+			System.out.print("\nOpção inválida! \nDigite novamente: ");
+			option = sc.nextInt();
+		}
+		return (option != 0) ? true : false;
+	}
+	
+	// Verifica se o user deseja continuar
+		public static int verifyInput(char response) {
+			char input = response;
+			Scanner sc = new Scanner(System.in);
+			if (input == 'n') {
+				System.out.println("\nPrograma Finalizado!");
+				return 0;
+			} else {
+				System.out.print("\nEntre com a opção desejada: ");
+				int choiceList = sc.nextInt();
+				verifyOption(choiceList);
+				return choiceList;
+			}
+		}
+	
+	// Adiciona um livro
+	public static void addBook(Stack<String> books) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("\nDigite o nome: ");
+		String bookName = sc.nextLine();
+		books.push(bookName);
+		System.out.println("\nPilha:");
+		System.out.println("\n" + bookName);
+		System.out.println("\nLivro adicionado!");
+	}
+	
+	// Lista os livros:
+		public static void listBooks(Stack<String> books) {
+			if (fila.size() == 0) {
+				System.out.println("\nA Pilha está vazia!");
+			} else {
+				System.out.println("\nLista de Clientes na Fila:");
+				System.out.println();
+				fila.forEach(name -> System.out.println(name));
+			}
+		}
+	
+	
+	
+}

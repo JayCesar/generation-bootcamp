@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="aula1.Employer"/>
+    <fullyQualifiedTypeName name="aula2.entities.Donor"/>
+    <fullyQualifiedTypeName name="aula2.entities.species.Ave"/>
+    <fullyQualifiedTypeName name="aula2.entities.Employer"/>
+    <fullyQualifiedTypeName name="aula2.entities.OperatorService"/>
+    <fullyQualifiedTypeName name="aula2.entities.NumberTyped"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="aula3.entities.Colaborador"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+</qualifiedTypeNameHistroy>

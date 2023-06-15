@@ -1,0 +1,10 @@
+package entities;
+
+import java.time.LocalDate;
+
+public class Produtos {
+	private String nome;
+	private String tipo;
+	private LocalDate paymentDay;
+	private D
+}

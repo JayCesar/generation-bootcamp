@@ -1,0 +1,35 @@
+package aula5_collections;
+
+import java.util.ArrayList;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ArrayListExercise {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		ArrayList<Integer> list = new ArrayList<>();
+		
+		System.out.print("Quantos números serão adicionados à lista? ");
+		int listAmount = sc.nextInt();
+		for (int i = 0; i < listAmount; i++) {
+			System.out.print("Digite o " + (i+1) + "° número: ");
+			list.add(sc.nextInt());
+		}
+		
+		System.out.println("Digite o número que você deseja encontrar: ");
+		int numberTyped = sc.nextInt();
+		
+		if (list.contains(numberTyped)) {
+			list.forEach(number -> System.out.println(number));
+		}
+		
+		
+		
+		sc.close();
+
+	}
+
+}

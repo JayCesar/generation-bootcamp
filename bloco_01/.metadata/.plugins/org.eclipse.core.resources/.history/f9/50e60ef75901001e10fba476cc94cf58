@@ -1,0 +1,62 @@
+package entities;
+
+import java.time.LocalDate;
+
+public class Produtos {
+	private String nome;
+	private String tipo;
+	private LocalDate paymentDay;
+	private Double price;
+	private String branch;
+	
+	public Produtos(String nome, String tipo, LocalDate paymentDay, Double price, String branch) {
+		this.nome = nome;
+		this.tipo = tipo;
+		this.paymentDay = paymentDay;
+		this.price = price;
+		this.branch = branch;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public LocalDate getPaymentDay() {
+		return paymentDay;
+	}
+
+	public void setPaymentDay(LocalDate paymentDay) {
+		this.paymentDay = paymentDay;
+	}
+
+	public Double getPrice() {
+		return price;
+	}
+
+	public void setPrice(Double price) {
+		this.price = price;
+	}
+
+	public String getBranch() {
+		return branch;
+	}
+
+	public void setBranch(String branch) {
+		this.branch = branch;
+	}
+	
+	
+	
+}

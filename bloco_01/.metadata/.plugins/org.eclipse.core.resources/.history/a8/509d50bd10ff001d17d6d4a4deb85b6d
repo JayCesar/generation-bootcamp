@@ -1,0 +1,33 @@
+package aula5_collections;
+
+import java.util.ArrayList;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Colors {
+	// Link to exercise: https://docs.google.com/document/d/1u8PbJTYGHgWoJIkHF-sJJcD25RWvmVAX/edit
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		ArrayList<String> colorsList = new ArrayList<>();
+		
+		System.out.println("Digite um color: ");
+		colorsList.add(sc.nextLine());
+		
+		System.out.println("Listar todas as cores: ");
+		colorsList.forEach(color -> System.out.println(color));
+		
+		sc.close();
+
+	}
+
+}
+
+/*
+Azul
+Verde
+Amarelo
+Branco
+Laranja
+*/

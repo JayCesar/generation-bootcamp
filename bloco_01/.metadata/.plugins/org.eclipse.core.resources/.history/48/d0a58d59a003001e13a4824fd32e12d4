@@ -1,0 +1,10 @@
+package aula8.entities;
+
+public class Terrestre {
+
+	public Terrestre(Integer capacidade) {
+		super(capacidade);
+		// TODO Auto-generated constructor stub
+	}
+	
+}

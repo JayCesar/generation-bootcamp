@@ -1,0 +1,21 @@
+package application;
+
+import java.time.format.DateTimeFormatter;
+
+import entities.Cliente;
+
+public class TestaCliente {
+
+	public static void main(String[] args) {
+		
+		DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		
+		Cliente c1 = new Cliente(
+				"Roberto Almeida", 
+				"robertoalmeida123@gmail.com", 
+				DateTimeFormatter.parse("11/04/1987", fmt), 
+				"11948132468", "Minas Gerais");
+
+	}
+
+}

@@ -1,0 +1,49 @@
+package aula7_estrutura_de_dados;
+
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class camada_pilha {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		Queue<String> fila = new LinkedList<>();
+
+		printMenu();
+
+		System.out.print("\nEntre com a opção desejada: ");
+		int choiceList = sc.nextInt();
+
+		while (verifyOption(choiceList)) {
+			switch (choiceList) {
+			case 1:
+				addClient(fila);
+				System.out.print("\nDeseja continuar o programa (s/n)? ");
+				choiceList = verifyInput(sc.next().toLowerCase().charAt(0));
+				break;
+			case 2:
+				listClients(fila);
+				System.out.print("\nDeseja continuar o programa (s/n)? ");
+				choiceList = verifyInput(sc.next().toLowerCase().charAt(0));
+				break;
+			case 3:
+				removeClients(fila);
+				System.out.print("\nDeseja continuar o programa (s/n)? ");
+				choiceList = verifyInput(sc.next().toLowerCase().charAt(0));
+				break;
+			case 0:
+				System.out.println("\nPrograma Finalizado!");
+				break;
+			default:
+				System.out.println("Test");
+			}
+
+		}
+		System.out.println("\nPrograma Finalizado!");
+
+		sc.close();
+	}
+
+}

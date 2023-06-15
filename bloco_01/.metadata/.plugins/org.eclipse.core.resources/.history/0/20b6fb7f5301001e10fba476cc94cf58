@@ -1,0 +1,12 @@
+package application;
+
+import entities.Cliente;
+
+public class TestaCliente {
+
+	public static void main(String[] args) {
+		Cliente c1 = new Cliente("Roberto Almeida", "robertoalmeida123@gmail.com", )
+
+	}
+
+}

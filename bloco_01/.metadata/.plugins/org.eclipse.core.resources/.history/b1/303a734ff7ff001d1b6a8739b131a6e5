@@ -1,0 +1,46 @@
+package aula7_estrutura_de_dados;
+
+import java.util.Scanner;
+
+public class CamadaStack {
+	public static void main (String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		printMenu();
+		
+		System.out.print("\nEntre com a opção desejada: ");
+		int choiceList = sc.nextInt();
+		
+		while(verifyOption(choiceList)) {
+			
+		}
+		System.out.println("\nPrograma Finalizado!");
+	}
+	
+	// Imprime o menu
+	public static void printMenu() {
+		for (int i = 0; i <= 50; i++)
+		System.out.print("*");
+		System.out.println("\n");
+		System.out.println("\t 1 - Adicionar Livos na Pilha");
+		System.out.println("\t 2 - Listar todos os Livros");
+		System.out.println("\t 3 - Retirar livro da Pilha");
+		System.out.println("\t 0 - Sair");
+		System.out.println("");
+		for (int i = 0; i <= 50; i++)
+		System.out.print("*");
+	}
+	
+	public static boolean verifyOption(int inputOption) {
+		int option = inputOption;
+		Scanner sc = new Scanner(System.in);
+		while (!(option <= 3) || !(option > -1)) {
+			System.out.print("\nOpção inválida! \nDigite novamente: ");
+			option = sc.nextInt();
+		}
+		return (option != 0) ? true : false;
+	}
+	
+	
+	
+}

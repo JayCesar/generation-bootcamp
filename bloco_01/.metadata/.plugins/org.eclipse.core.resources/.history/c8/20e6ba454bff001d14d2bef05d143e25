@@ -1,0 +1,15 @@
+package aula5_collections;
+
+import java.util.Scanner;
+
+public class positionSet {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		Set<Integer> listNumbers = new HashCode<>();
+		
+
+	}
+
+}

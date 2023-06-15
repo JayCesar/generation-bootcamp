@@ -1,0 +1,10 @@
+package entities;
+
+public class Funcionario {
+	private Integer id;
+	private String name;
+	private String setor;
+	private String nivel;
+	private int idade;
+	
+}

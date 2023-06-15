@@ -1,0 +1,5 @@
+package aula8.entities;
+
+public class Transporte {
+	private Integer capacidade;
+}

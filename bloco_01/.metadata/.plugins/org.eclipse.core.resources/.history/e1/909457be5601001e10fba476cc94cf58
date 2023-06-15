@@ -1,0 +1,22 @@
+package application;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+import entities.Cliente;
+
+public class TestaCliente {
+
+	public static void main(String[] args) {
+		
+		DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		
+		Cliente c1 = new Cliente("Roberto Almeida", "robertoalmeida123@gmail.com", LocalDate.parse("11/04/1995", fmt), 1,"Minas Gerais");
+		
+		
+		Cliente c2 = new Cliente("Amanda Oliveira", "amandaoliveira123123@gmail.com", LocalDate.parse("01/31/2005", fmt), 2, "Espírito Santo");
+
+		System.out.println(c1.visualizar());
+	}
+
+}

@@ -1,0 +1,39 @@
+package aula8.entities;
+
+public class Terrestre  {
+
+	private Integer numeroRodas;
+	protected Integer velocidade;
+	
+	public Terrestre(Integer numeroRodas, Integer velocidade) {
+		this.numeroRodas = numeroRodas;
+		this.velocidade = velocidade;
+	}
+
+	public Integer getNumeroRodas() {
+		return numeroRodas;
+	}
+
+	public void setNumeroRodas(Integer numeroRodas) {
+		this.numeroRodas = numeroRodas;
+	}
+
+	public Integer getVelocidade() {
+		return velocidade;
+	}
+
+	public void setVelocidade(Integer velocidade) {
+		this.velocidade = velocidade;
+	}
+	
+	
+	public String visualizar() {
+		return "Número de rodas: " + getNumeroRodas() + "\n"
+				+ "Velocidade: " + getVelocidade();
+	}
+	
+	
+
+	
+	
+}

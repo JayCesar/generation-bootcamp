@@ -1,0 +1,69 @@
+package aula5_collections;
+
+import java.util.ArrayList;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ArrayListExercise {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		ArrayList<Integer> list = new ArrayList<>();
+		
+		System.out.print("Quantos números serão adicionados à lista? ");
+		int listAmount = sc.nextInt();
+		for (int i = 0; i < listAmount; i++) {
+			System.out.print("Digite o " + (i+1) + "° número: ");
+			list.add(sc.nextInt());
+		}
+		
+		System.out.println("Digite o número que você deseja encontrar: ");
+		int numberTyped = sc.nextInt();
+		
+		
+		/*if (list.contains(numberTyped)) {
+			list.forEach(number -> {
+				if (number == numberTyped) {
+					 System.out.println("O número " + numberTyped + " está localizado na posição " + list.indexOf(number));
+				}
+			});
+		}else {
+			System.out.println("O número " + numberTyped + " não foi encontrado!");
+		}*/
+		
+		
+		if (list.indexOf(numberTyped) != -1 && list.indexOf(numberTyped) > 1) {
+			System.out.println("O número " + numberTyped + "está localizado nas posições ");
+			for (Integer number : list) {
+				System.out.println("O número " + number + " );
+			}
+		}else if(list.indexOf(numberTyped) == 1) {
+			
+		}
+		
+	
+		
+		
+		/*int cont = 0;
+		int numberPrint = 0;
+		int positionPrint = 0;
+		if (list.contains(numberTyped)) {
+			for(Integer number : list) {
+				if (number == numberTyped) {
+					cont++;
+					numberPrint = number;
+					positionPrint = list.indexOf(number);
+					printList.add(number)
+				}
+			}
+		}else {
+			System.out.println("O número " + numberTyped + " não foi encontrado!");
+		}*/
+		
+		sc.close();
+
+	}
+
+}

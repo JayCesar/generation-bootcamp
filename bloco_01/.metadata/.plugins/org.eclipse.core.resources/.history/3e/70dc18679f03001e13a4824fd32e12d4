@@ -1,0 +1,11 @@
+package aula8.entities;
+
+public class Transporte {
+	private Integer capacidade; // Número de pessoas
+
+	public Transporte(Integer capacidade) {
+		this.capacidade = capacidade;
+	}
+	
+	
+}
