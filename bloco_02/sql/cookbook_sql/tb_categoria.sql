@@ -34,3 +34,15 @@ INSERT INTO tb_produtos(
 ) values("Cenoura", 18, 3.50, 3);
 
 SELECT * FROM tb_produtos;
+
+-- INNER JOIN
+SELECT nome, quantidade, preco from tb_produtos
+INNER JOIN tb_categoria ON tb_categoria.id = tb_produtos.categoria_id;
+
+-- LEFT JOIN
+SELECT nome, quantidade, preco FROM tb_produtos
+LEFT JOIN tb_categoria ON tb_categoria.id = tb_produtos.categoria_id;
+
+-- RIGHT JOIN
+SELECT descricao FROM tb_categoria
+RIGHT JOIN tb_produtos ON tb_produtos.categoria_id = tb_categoria.id;
