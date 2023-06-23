@@ -30,7 +30,7 @@ Nesta fase eu tive contado de forma intensa com a linguagem Java durante um mês
 Além disso, eu utilizei as o app Notion e as **Issues** e o **MilesStone** do **Git Hub** como ferramentas de anotações das aulas e da minha leitura do [**cookBook**](https://github.com/rafaelq80/cookbook_java) distribuído para os alunes.  
 - [x] Minhas anotações sobre [**Java**](https://github.com/JayCesar/generationBrazil-bootcamp/milestone/2?closed=1);
 - [x] Pasta sobre introdução ao [**Git e Github**](https://github.com/JayCesar/generationBrazil-bootcamp/tree/main/bloco_01/aulagit);
-- [x] Mine projeto de java:  
+- [x] Breve projeto de java: [**GenStudents**](https://github.com/JayCesar/generation-bootcamp/tree/main/bloco_01/java/GeStudents)
 
 ### 🚧 Projeto final do Bloco I: SuperEats65
 
