@@ -2,7 +2,7 @@
 
 ## 🖥️ Sobre
 
-<img align="right" src="https://github.com/JayCesar/generationBrazil-bootcamp/assets/44206400/618d4f05-7bbf-4ee0-81b3-3ffb0b368ae6" title="source: imgur.com" />
+<img align="right" src="https://github.com/JayCesar/generation-bootcamp/assets/44206400/0846bed3-fd51-4648-ade7-54fffe6f5cb1" title="source: imgur.com" />
 
 O **Bootcamp Java Full-stack developer** é um programa de bolsas de estudos de 3 meses da [**Generation Brazil**](https://brazil.generation.org/), sendo cada qual destinado a diferentes tecnologias. Além disso, eu tenho bastante contado com aprendizado de habilidades não técnica (soft skills) e esse assunto é constantemente abordado e colocado em prática todos os dias. Essas são as habilidades colocadas em pauta diariamente:
 - [x] Proatividade;
@@ -49,4 +49,4 @@ Com essa equipe incrível aprendi na prática o primeiro pilar do manifesto agil
 
 ## 2️⃣ Bloco II (SQL && Spring)
 
-
+Em desenvolvimento...
