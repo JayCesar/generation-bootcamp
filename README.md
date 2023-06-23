@@ -40,8 +40,7 @@ Fiz parte do desenvolvimento da [**SuperEats65**](https://github.com/JayCesar/Su
 
 O time do qual eu fiz parte é composto pela [**Cinthia de Paula**](https://github.com/cinthiadepaula), [**Kamila Ramos**](https://github.com/kmikazze), [**Maria de Fátima**](https://github.com/Maria621), [**Marcelo Apolinário**](https://github.com/whoamiApolo) e a [**Patrícia Silva**](https://github.com/ppfsil)
 
-Com essa equipe incrível aprendi na prática o primeiro pilar do manifesto agil:  
-**_Indivíduos e interações mais que processos e ferramentas._**
+Com essa equipe incrível aprendi na prática o primeiro pilar do manifesto agil: **_Indivíduos e interações mais que processos e ferramentas._**
 
 → Post sobre no linkedin: [**SuperEats65**](https://www.linkedin.com/posts/jc-batista_supereats65-activity-7077651739461525505-nSwE?utm_source=share&utm_medium=member_desktop)
 
