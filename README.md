@@ -49,4 +49,5 @@ Com essa equipe incrível aprendi na prática o primeiro pilar do manifesto agil
 
 ## 2️⃣ Bloco II (SQL && Spring)
 
-Em desenvolvimento...
+## 3️⃣ Bloco III (React)
+
